@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <title>FaceSnap</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <a class="navbar-brand" href="{{ url_for('index') }}" style="font-size: 1.5rem; font-weight: bold; color: #007bff;">
+                <img src="{{url_for('static',filename='images/facesnap.PNG')}}" alt="FaceSnap Logo" width="159" height="47" style="vertical-align: middle;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="{{ url_for('index') }}" style="font-size: 1.1rem; color: #333; margin-right: 20px;">Home</a>
+                <a class="nav-item nav-link" href="{{ url_for('faceapp') }}" style="font-size: 1.1rem; color: #333;">App</a>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    {% block bodyblock %}
+
+    {% endblock %}
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="{{ url_for('static', filename='images/facesnap_logo.png') }}" alt="FaceSnap Logo" width="96" height="50">
+            <p align="center">
+                <span style="color:white">
+                    &copy; 2024 FaceSnap
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

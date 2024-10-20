@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+<div style="background-color: #87CEEB; padding: 50px 0; font-family: Arial, sans-serif;">
+    <div style="max-width: 1000px; margin: auto; background-color: white; border-radius: 15px; padding: 40px 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+
+        <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; text-align: center; margin-bottom: 20px;">
+            Face Recognition Application
+        </h3>
+
+        <p style="font-size: 1.2rem; line-height: 1.8; color: #555; text-align: justify; margin-bottom: 30px;">
+            Gender Classification: Leveraging advanced machine learning techniques, our application offers accurate gender classification. 
+            Upon image upload, the system efficiently processes the data by converting it to grayscale, cropping the face, 
+            and extracting key facial features. These features are then fed into a trained machine learning model, 
+            which predicts the gender with high precision.
+        </p>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+            <img src="{{ url_for('static', filename='images/app_demo.PNG') }}" alt="App Demo" 
+                style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+
+        <div style="text-align: center;">
+            <a href="{{ url_for('gender') }}" 
+                style="font-size: 1.1rem; font-weight: bold; padding: 12px 30px; color: white; background-color: #007bff; 
+                border: none; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3); 
+                transition: background-color 0.3s ease;">
+                Try it Now
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
