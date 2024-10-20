@@ -1,0 +1,21 @@
+# Ignore the virtual environment folder 'my_env2'
+my_env2/
+
+# Ignore all hidden Python files that might be created when a Python and Flask app is run
+*.py[cod]       # Compiled Python files (.pyc, .pyo, .pyd)
+__pycache__/    # Python cache folders
+*.pyo           # Python optimized files
+*.pyd           # Windows compiled Python files
+
+
+# Ignore log files or runtime-generated files
+*.log
+*.db
+
+# Ignore Flask instance or config files that are generated
+instance/
+config.py
+
+
+# Ignore environment-specific settings
+.env
