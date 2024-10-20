@@ -6,7 +6,7 @@ my_env2/
 __pycache__/    # Python cache folders
 *.pyo           # Python optimized files
 *.pyd           # Windows compiled Python files
-
+*.pyc
 
 # Ignore log files or runtime-generated files
 *.log
