@@ -19,3 +19,7 @@ config.py
 
 # Ignore environment-specific settings
 .env
+
+
+static/predict/*
+static/uploads/*
