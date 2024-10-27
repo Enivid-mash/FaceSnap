@@ -2,8 +2,8 @@
 
 Welcome to the **FaceSnap** repository! This project is an AI-powered face recognition web application built with Python, OpenCV, Machine Learning, and Flask. It allows users to upload images and receive real-time face recognition results. The application leverages machine learning models like PCA (Eigenfaces) and Support Vector Machines (SVM) for accurate face classification.
 
-![View of the landingpage](/static/homepage.PNG)
-![View of the homepage](/static/app.PNG)
+![View of the landingpage](/static/images/homepage.PNG)
+![View of the homepage](/static/images/app.PNG)
 
 ## Table of Contents
 - [Introduction](#introduction)
