@@ -2,6 +2,9 @@
 
 Welcome to the **FaceSnap** repository! This project is an AI-powered face recognition web application built with Python, OpenCV, Machine Learning, and Flask. It allows users to upload images and receive real-time face recognition results. The application leverages machine learning models like PCA (Eigenfaces) and Support Vector Machines (SVM) for accurate face classification.
 
+![View of the landingpage](/static/homepage.PNG)
+![View of the homepage](/static/app.PNG)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
@@ -38,7 +41,7 @@ To set up FaceSnap locally, follow these steps:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/FaceSnap.git
-   cd facesnap
+   cd FaceSnap
    ```
 
 2. Set up a virtual environment:
@@ -59,6 +62,6 @@ To set up FaceSnap locally, follow these steps:
 
 ## Usage
 1. Navigate to `http://127.0.0.1:50000/` in your web browser.
-2. Upload Image: On the home page, click the "Choose File" button to upload an image containing faces.
+2. Upload Image: On the App page, click the "Choose File" button to upload an image containing faces.
 3. Recognition: Once uploaded, the app will process the image, detect faces, and display the recognized faces along with their bounding boxes and labels
 4. View Results: The results will be displayed directly on the web page, with options to upload new images.
