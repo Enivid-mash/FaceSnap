@@ -21,7 +21,7 @@ config.py
 .env
 
 # Ignore all files within the predict and uploads directories but not the directories themselves
-static/predict/*.
+static/predict/*
 # !static/predict/
-static/uploads/*.
+static/uploads/*
 # !static/uploads/
